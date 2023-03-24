@@ -6,3 +6,8 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+Hero.create([
+    { "name": "Kamala Khan", "super_name": "Ms. Marvel" },  
+    { "name": "Doreen Green", "super_name": "Squirrel Girl" },  
+    { "name": "Gwen Stacy", "super_name": "Spider-Gwen" }
+])
