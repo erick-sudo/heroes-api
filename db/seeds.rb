@@ -6,8 +6,19 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-Hero.create([
-    { "name": "Kamala Khan", "super_name": "Ms. Marvel" },  
-    { "name": "Doreen Green", "super_name": "Squirrel Girl" },  
-    { "name": "Gwen Stacy", "super_name": "Spider-Gwen" }
+# Hero.create([
+#     { "name": "Kamala Khan", "super_name": "Ms. Marvel" },  
+#     { "name": "Doreen Green", "super_name": "Squirrel Girl" },  
+#     { "name": "Gwen Stacy", "super_name": "Spider-Gwen" }
+# ])
+
+Power.create([
+    { "name": "super strength", "description": "gives the wielder super-human strengths" },
+    { "name": "flight", "description": "gives the wielder the ability to fly through the skies at supersonic speed" }
+])
+
+HeroPower.create([
+    { "strength": "Average", "power_id": 1, "hero_id": 3},
+    { "strength": "Strong", "power_id": 2, "hero_id": 1},
+    { "strength": "Weak", "power_id": 1, "hero_id": 1}
 ])
